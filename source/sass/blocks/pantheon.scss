@@ -1,0 +1,156 @@
+.pantheon {
+  height: 950px;
+  margin-top: -200px;
+  padding-top: 200px;
+  background-image: url("../img/screen1_desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include center-wrapper();
+    height: 100%;
+  }
+
+  &__header {
+    font-weight: 100;
+    font-size: 39px;
+    line-height: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__header1 {
+    font-weight: 400;
+  }
+
+  &__header2 {
+    margin-left: -10px;
+    font-weight: 900;
+    font-size: 210px;
+  }
+
+  &__video {
+    position: relative;
+    margin-top: -20px;
+  }
+
+  &__video-desc {
+    position: absolute;
+    top: 100px;
+    right: -175px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffcfdf;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: -140px;
+      z-index: 1;
+      display: block;
+      width: 118px;
+      height: 1px;
+      background-color: #ffcfdf;
+    }
+  }
+
+  &__down {
+    position: absolute;
+    bottom: 65px;
+    left: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    background-image: url("../img/down.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .pantheon {
+    background-image: url("../img/screen1_tablet.jpg");
+    height: 940px;
+
+    &__header {
+      margin-top: 40px;
+      font-size: 31.5px;
+      line-height: 90px;
+    }
+
+    &__header2 {
+      margin-left: -8px;
+      font-size: 170px;
+    }
+
+    &__video {
+      margin-top: 30px;
+      width: 515px;
+    }
+
+    &__video-desc {
+      top: 215px;
+      right: 40px;
+      z-index: 1;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__down {
+      position: absolute;
+      bottom: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .pantheon {
+    height: 580px;
+    margin-top: -80px;
+    background-image: url("../img/screen1_mobile.jpg");
+
+    &__header {
+      margin-top: -70px;
+      font-size: 14px;
+      line-height: 50px;
+    }
+
+    &__header2 {
+      margin-left: -4px;
+      font-size: 77px;
+    }
+
+    &__video {
+      margin-top: 10px;
+      width: 215px;
+    }
+
+    &__video-desc {
+      top: 120px;
+      right: 10px;
+    }
+
+    &__down {
+      bottom: 30px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

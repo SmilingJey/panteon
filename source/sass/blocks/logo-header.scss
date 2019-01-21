@@ -1,0 +1,50 @@
+.logo-header {
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  padding-left: 63px;
+  padding-top: 5px;
+  height: 48px;
+  width: 195px;
+
+  &__text {
+    margin: 0;
+    font-family: "Proxima Nova", "Arial", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 16px;
+  }
+
+  &__subtext {
+    font-family: "Proxima Nova", "Arial", sans-serif;
+    margin: 0;
+    color: #ffffff;
+    text-transform: lowercase;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 100;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .logo-header {
+    background-image: url("../img/logo.png");
+    background-size: 39px 39px;
+    padding-left: 47px;
+    padding-top: 5px;
+    height: 48px;
+    width: 195px;
+
+    &__text {
+      font-size: 18px;
+      line-height: 13px;
+    }
+
+    &__subtext {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+}

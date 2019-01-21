@@ -1,0 +1,70 @@
+.subscribe {
+  padding: 43px 70px 70px;
+  background-image: url("../img/form_back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__header {
+    margin-bottom: 33px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 24px;
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 36px;
+
+    input {
+      width: 100%;
+      padding-bottom: 8px;
+      padding-left: 10px;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: inherit;
+      color: #ffffff;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #ffffff;
+
+      &::placeholder {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: inherit;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    margin-top: 56px;
+    padding: 17px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #c2529a;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 60px #ffffff;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .subscribe {
+    padding: 20px 50px 40px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .subscribe {
+    padding-bottom: 60px;
+
+    &__header {
+      text-align: center;
+    }
+  }
+}

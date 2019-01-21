@@ -1,0 +1,41 @@
+.colony {
+  background-color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__inner {
+    @include center-wrapper();
+  }
+
+  h2 {
+    font-size: 60px;
+    line-height: 60px;
+    color: #e12457;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .colony {
+    padding-top: 15px;
+    padding-bottom: 40px;
+
+    h2 {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .colony {
+    padding-top: 1px;
+
+    h2 {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+}

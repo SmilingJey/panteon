@@ -1,0 +1,74 @@
+$mobile-max-width: 759px;
+$tablet-max-width: 1184px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+@import "normalize.scss";
+@import "fonts.scss";
+@import "colors.scss";
+@import "visually-hidden.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #13142f;
+}
+
+@mixin center-wrapper() {
+  max-width: 1185px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $tablet-max-width) {
+    width: 760px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 320px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}
+
+@import "blocks/page-header.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/logo-header.scss";
+@import "blocks/pantheon.scss";
+@import "blocks/video-player.scss";
+@import "blocks/remember-all.scss";
+@import "blocks/road.scss";
+@import "blocks/promo.scss";
+@import "blocks/promo-container.scss";
+@import "blocks/roadblock.scss";
+@import "blocks/colony.scss";
+@import "blocks/slider.scss";
+@import "blocks/launch.scss";
+@import "blocks/subscribe.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/logo-footer.scss";
+@import "blocks/social.scss";

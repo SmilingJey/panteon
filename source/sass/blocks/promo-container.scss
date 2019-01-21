@@ -1,0 +1,32 @@
+.promo-container {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 165px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__inner {
+    @include center-wrapper();
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .promo-container {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .promo-container {
+    width: 320px;
+    padding-bottom: 0;
+
+    &__inner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

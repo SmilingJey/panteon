@@ -1,0 +1,29 @@
+.logo-footer {
+  width: 150px;
+  height: 48px;
+  padding-top: 0;
+  padding-left: 48px;
+  background-image: url("../img/footer_logo.png");
+  background-repeat: no-repeat;
+
+  &__text {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 13px;
+    font-family: "Proxima Nova", "Arial", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+
+  &__subtext {
+    margin: 0;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 21px;
+    font-family: "Proxima Nova", "Arial", sans-serif;
+    color: #ffffff;
+    text-transform: lowercase;
+  }
+}
