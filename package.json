@@ -5,25 +5,25 @@
   "description": "build web project",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.1.x",
+    "autoprefixer": "^9.1.x",
     "browser-sync": "^2.26.3",
     "deep-extend": ">=0.5.1",
     "del": "^3.0.0",
-    "gulp": "4.0.x",
+    "gulp": "^4.0.x",
     "gulp-cheerio": "^0.6.3",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-exclude-gitignore": "^1.2.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "8.0.x",
+    "gulp-postcss": "^8.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify-es": "^1.0.4",
-    "gulp-webp": "^3.0.0",
+    "gulp-webp": "^4.0.1",
     "gulp-zip": "^4.2.0",
     "moment": "^2.23.0",
     "posthtml-include": "^1.2.0",
@@ -34,7 +34,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
@@ -53,6 +54,7 @@
     "node": "8.12"
   },
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "http2": "^3.3.7"
   }
 }

@@ -25,9 +25,7 @@ var log = require('fancy-log');
 
 /************************** BUILD CSS **************************************/
 gulp.task('css', function () {
-  var processors = [autoprefixer({
-    browsers: ['last 2 version']
-  })];
+  var processors = [autoprefixer()];
   return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sass())
@@ -99,7 +97,7 @@ gulp.task('imgmin', function () {
       imagemin.optipng({
         optimizationLevel: 3
       }),
-      imagemin.jpegtran({
+      imagemin.mozjpeg({
         progressive: true
       })
     ]))
